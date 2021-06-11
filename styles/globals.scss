@@ -1,0 +1,30 @@
+@use 'themes/light' as theme;
+@use 'links' as l;
+
+body {
+  background-color: theme.$background;
+  font-family: "IBM Plex Sans";
+  font-size: 18px;
+  line-height: 140%;
+  color: theme.$main-text;
+}
+
+a {
+  text-decoration: none;
+  color: theme.$link;
+  cursor: pointer;
+  @include l.link-border;
+
+  &:hover {
+    @include l.link-border-hover;
+  }
+}
+
+h1, h2 {
+  font-size: 28px;
+  margin: 16px 0 0;
+}
+
+p {
+  margin: 0 0 8px 0;
+}

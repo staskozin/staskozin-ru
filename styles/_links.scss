@@ -1,0 +1,11 @@
+@use 'themes/light' as theme;
+
+@mixin link-border {
+  border-bottom: 1px solid theme.$link-underline;
+  transition: border-bottom-color 0.33s ease-out;
+}
+
+@mixin link-border_hover {
+  border-bottom-color: theme.$link;
+  transition: none;
+}
