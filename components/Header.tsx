@@ -1,9 +1,12 @@
 import s from '../styles/Header.module.scss'
+import Image from 'next/image'
 
 export default function Header() {
   return (
     <header className={s.header}>
-      <h1>Станислав Козин</h1>
+      <div>
+        <h1>Станислав Козин</h1>
+      </div>
       <aside>
         <a href="">Гитхаб</a>
         <a href="">Телеграм</a>
