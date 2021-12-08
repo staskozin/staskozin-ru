@@ -41,7 +41,7 @@ export default function Concatenator() {
         <span>Исходный текст</span>
         <textarea
           cols={30}
-          rows={10}
+          rows={8}
           placeholder="benzinovye-gazonokosilki"
           value={input}
           onChange={e => {
@@ -54,7 +54,7 @@ export default function Concatenator() {
         <span>Результат</span>
         <textarea
           cols={30}
-          rows={10}
+          rows={8}
           placeholder="data/new/benzinovye-gazonokosilki.jpg"
           value={output}
           onChange={e => { setOutput(e.target.value) }}

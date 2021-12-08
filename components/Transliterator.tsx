@@ -11,7 +11,7 @@ export default function Transliterator() {
         <span>Исходный текст</span>
         <textarea
           cols={30}
-          rows={10}
+          rows={8}
           placeholder="Бензиновые газонокосилки"
           value={input}
           onChange={e => {
@@ -24,7 +24,7 @@ export default function Transliterator() {
         <span>Результат</span>
         <textarea
           cols={30}
-          rows={10}
+          rows={8}
           placeholder="benzinovye-gazonokosilki"
           value={output}
           onChange={e => setOutput(transliterate(e.target.value))}
