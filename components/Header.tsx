@@ -1,11 +1,19 @@
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import HeadBasic from './HeadBasic'
 import s from '../styles/Header.module.scss'
-import Image from 'next/image'
 
 export default function Header() {
   return (
     <header className={s.header}>
+      <HeadBasic />
       <div>
-        <h1>Станислав Козин</h1>
+
+        {
+          useRouter().pathname === '/' ?
+            <h1>Станислав Козин</h1> :
+            <h2><Link href="/">Станислав Козин</Link></h2>
+        }
       </div>
       <aside>
         <a href="https://github.com/staskozin">Гитхаб</a>
