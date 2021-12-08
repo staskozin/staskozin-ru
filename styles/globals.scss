@@ -40,3 +40,21 @@ a:hover {
     padding: 16px;
   }
 }
+
+input[type="number"],
+input[type="text"] {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  background-color: rgba(0, 0, 0, 0);
+  color: #d4d4d4;
+  font-size: 18px;
+  font-family: "PT Mono";
+  border: 1px solid #d4d4d4;
+}
+
+label > span {
+  display: block;
+  margin-bottom: 8px;
+  line-height: 28px;
+}
