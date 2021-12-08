@@ -12,7 +12,7 @@ export default function RiceCalculator() {
   })
 
   return (
-    <div>
+    <>
       <label>
         <span>Рис, г</span>
         <input
@@ -26,20 +26,20 @@ export default function RiceCalculator() {
             const rice = Number.parseInt(e.target.value)
             e.target.value = rice.toString()
             if (Number.isNaN(rice)) {
-              setRice(0);
-              setOther(calculateProportions(0));
+              setRice(0)
+              setOther(calculateProportions(0))
             } else if (rice > 999999) {
-              setRice(999999);
-              setOther(calculateProportions(999999));
+              setRice(999999)
+              setOther(calculateProportions(999999))
             } else {
-              setRice(Math.abs(rice));
-              setOther(calculateProportions(rice));
+              setRice(Math.abs(rice))
+              setOther(calculateProportions(rice))
             }
           }}
           onBlur={e => {
-            const rice = Number.parseInt(e.target.value) < 1 ? 500 : Number.parseInt(e.target.value);
-            setRice(rice);
-            setOther(calculateProportions(rice));
+            const rice = Number.parseInt(e.target.value) < 1 ? 500 : Number.parseInt(e.target.value)
+            setRice(rice)
+            setOther(calculateProportions(rice))
           }}
         />
       </label>
@@ -62,7 +62,7 @@ export default function RiceCalculator() {
         </li>
       </ul>
       <YouTube youtubeId="Cht4NvRUz-s" />
-    </div>
+    </>
   )
 }
 

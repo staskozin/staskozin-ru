@@ -42,7 +42,8 @@ a:hover {
 }
 
 input[type="number"],
-input[type="text"] {
+input[type="text"],
+textarea {
   width: 100%;
   padding: 10px;
   box-sizing: border-box;
@@ -51,6 +52,19 @@ input[type="text"] {
   font-size: 18px;
   font-family: "PT Mono";
   border: 1px solid #d4d4d4;
+
+  &::placeholder {
+    color: #646464;
+  }
+}
+
+textarea {
+  resize: vertical;
+}
+
+label {
+  display: block;
+  margin-top: 16px;
 }
 
 label > span {
