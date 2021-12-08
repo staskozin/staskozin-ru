@@ -2,15 +2,17 @@ body {
   padding: 8px;
   margin: 0 auto;
   font-size: 18px;
-  font-family: 'PT Mono';
+  font-family: "PT Mono";
   background-color: #1e1e1e;
   color: #d4d4d4;
   max-width: 1152px;
 }
 
-h1 {
+h1,
+h2 {
   font-size: 32px;
   margin: 0 0 16px 0;
+  color: #be6c4a;
 }
 
 p {
@@ -21,7 +23,7 @@ p {
 a {
   color: #2493cf;
   text-decoration: none;
-  border-bottom: 1px solid rgba(36, 147, 207, .3);
+  border-bottom: 1px solid rgba(36, 147, 207, 0.3);
   transition-property: color, background-color;
   transition-timing-function: ease-out;
   transition-duration: 0.33s;
@@ -31,4 +33,10 @@ a:hover {
   color: #9ebb8f;
   border-bottom-color: rgba(158, 187, 143);
   transition: none;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    padding: 16px;
+  }
 }
