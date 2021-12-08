@@ -8,8 +8,8 @@ export default function Header() {
         <h1>Станислав Козин</h1>
       </div>
       <aside>
-        <a href="">Гитхаб</a>
-        <a href="">Телеграм</a>
+        <a href="https://github.com/staskozin">Гитхаб</a>
+        <a href="https://t.me/staskozin">Телеграм</a>
       </aside>
     </header>
   )
