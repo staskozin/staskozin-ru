@@ -1,0 +1,22 @@
+.header {
+  aside {
+    font-size: 32px;
+    margin-bottom: 32px;
+
+    a {
+      display: inline-block;
+      margin-right: 16px;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    display: flex;
+    justify-content: space-between;
+  }
+}
