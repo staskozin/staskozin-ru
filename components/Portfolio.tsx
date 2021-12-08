@@ -1,3 +1,4 @@
+import Link from 'next/link'
 import s from '../styles/Portfolio.module.scss'
 
 export default function Portfolio() {
@@ -40,19 +41,19 @@ export default function Portfolio() {
         <nav>
           <ul className={s['links']}>
             <li className={s['links__item']}>
-              <a href="">
+              <Link href="/rice-calculator">
                 Рисовый калькулятор
-              </a>
+              </Link>
             </li>
             <li className={s['links__item']}>
-              <a href="">
+              <Link href="/transliterator">
                 Транслитератор
-              </a>
+              </Link>
             </li>
             <li className={s['links__item']}>
-              <a href="">
+              <Link href="/concatenator">
                 Конкатенатор
-              </a>
+              </Link>
             </li>
           </ul>
         </nav>
