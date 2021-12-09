@@ -1,6 +1,9 @@
 .footer {
   margin-top: 64px;
   margin-bottom: 64px;
-  display: flex;
-  justify-content: space-between;
+
+  .wrap {
+    display: flex;
+    justify-content: space-between;
+  }
 }
