@@ -37,9 +37,12 @@ export default function RiceCalculator() {
             }
           }}
           onBlur={e => {
-            const rice = Number.parseInt(e.target.value) < 1 ? 500 : Number.parseInt(e.target.value)
             setRice(rice)
             setOther(calculateProportions(rice))
+          }}
+          onFocus={e => {
+            e.target.value = ''
+            e.target.placeholder = rice.toString()
           }}
         />
       </label>
