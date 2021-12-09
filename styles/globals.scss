@@ -1,3 +1,17 @@
+@font-face {
+  font-family: "PT Mono";
+  src: url("/font/PT-Mono_Regular.woff2") format("woff2"), url("/font/PT-Mono_Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "PT Mono";
+  src: url("/font/PT-Mono_Bold.woff2") format("woff2"), url("/font/PT-Mono_Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal;
+}
+
 @mixin transition($time) {
   transition-property: color, background-color;
   transition-timing-function: ease-out;
@@ -59,7 +73,7 @@ a {
   color: var(--link);
   text-decoration: none;
   border-bottom: 1px solid var(--link-underline);
-  @include transition(0.33s)
+  @include transition(0.33s);
 }
 
 a:hover {
