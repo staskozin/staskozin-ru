@@ -9,6 +9,11 @@ export default function Portfolio() {
         <nav>
           <ul className={s['links']}>
             <li className={s['links__item']}>
+              <a href="https://avorio.biz">
+                Сайт компании «Авориоматикс»
+              </a>
+            </li>
+            <li className={s['links__item']}>
               <a href="https://xn--b1aqmk3d.xn--p1ai">
                 Сайт компании «Вэско-электро»
               </a>
